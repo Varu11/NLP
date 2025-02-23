@@ -1,0 +1,29 @@
+ANÁLISIS DE SENTIMIENTO CON NLP
+
+Este proyecto consiste en el estudio de un Dataset con una colección de reviews pertenecientes a artículos de ropa.
+Buscamos el generar un modelo que permita predecir si una review es negativa o positiva.
+
+
+DATASET:
+El dataset utilizado es el "reviews_Clothing.json.gz" que contiene más de 200000 reviews.
+De dicho Dataset, obtenemos la información referente a las reviews y overall, con las que obtendremos los sentiments
+catalogando como opiniones negativas los overall de 0 a 3, y valoraciones positivas los overall de 4 y 5.
+
+
+EDA:
+Buscamos obtener diferentes informaciones: cardinalidad, distribuciones de reviews, nº de reviews positivas y negativas,
+N-grams, nube de palabras.
+
+
+PREPROCESADO:
+Se preprocesa el corpus de las reviews para poder modelar después.
+Se realiza: Tokenización, eliminación de stop-words, lematización.
+
+
+ENTRENAMIENTO:
+Se aplican 2 modelos: Regresión Logística y SVM
+
+
+CONCLUSIONES:
+Tras el estudio y ejecución de los modelos, se determina que la mejor solución, por poco margen, es la Regresión Logística,
+ya que arroja mejores datos de accuracy y precisión en las valoraciones positivas.
